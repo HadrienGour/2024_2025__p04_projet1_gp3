@@ -1,9 +1,10 @@
+from tools import *
+from data import *
+
 def nbr_base_to_nbr_base (init_number, init_base, target_base):
     pass
     target_number = None
     return target_number
-
-from tools import *
 
 assert nbr_base_to_nbr_base ("101", 2, 10) == "5"
 
