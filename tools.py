@@ -23,11 +23,11 @@ def is_in_selected_base (number, base):
 print (is_in_selected_base(ask_for_the_init_number, ask_for_the_init_base))
 
 
-# def dec_to_bin (n):
-#     k=[]
-#     while n != 0:
-        
-#         n = n//2
-#     return str(k)
+def dec_to_bin (n):
+    k=""
+    while n != 0:
+        k = f"{n % 2}"+ k
+        n = n//2
+    return k
 
-# print(dec_to_bin(5))
+print(dec_to_bin(5))
