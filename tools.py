@@ -28,3 +28,14 @@ def dec_to_bin (n):
         k = f"{n % 2}"+ k
         n = n//2
     return k
+
+def bin_to_dec (n):
+    j = 0
+    k = 0
+    for i in n[::-1]:
+        i = int(i)
+        k += i*(2**j)
+        j += 1
+    return str(k)
+
+print(bin_to_dec("101"))
