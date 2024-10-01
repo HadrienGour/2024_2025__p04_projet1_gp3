@@ -9,6 +9,7 @@ def is_in_selected_base (number, base):
         valid_chars = hex_valid_chars
     else:
         print ("Cette base n'est pas supportée dans le programme")
+        return False
     
     
     for j in number:
@@ -19,7 +20,7 @@ def is_in_selected_base (number, base):
             return False
     return True
 
-print (is_in_selected_base(145, 10))
+print (is_in_selected_base(ask_for_the_init_number, ask_for_the_init_base))
 
 
 # def dec_to_bin (n):
