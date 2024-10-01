@@ -1,6 +1,6 @@
 from data import*
 
-def is_in_base (number, base):
+def is_in_selected_base (number, base):
     if base == 2:
         valid_chars = bin_valid_chars
     elif base == 10:
@@ -19,7 +19,7 @@ def is_in_base (number, base):
             return False
     return True
 
-print (is_in_base(145, 10))
+print (is_in_selected_base(145, 10))
 
 
 # def dec_to_bin (n):
