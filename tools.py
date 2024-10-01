@@ -20,14 +20,16 @@ def is_in_selected_base (number, base):
             return False
     return True
 
-print (is_in_selected_base(ask_for_the_init_number, ask_for_the_init_base))
-
 
 def dec_to_bin (n):
+    n = int(n)
     k=""
     while n != 0:
         k = f"{n % 2}"+ k
         n = n//2
     return k
 
-print(dec_to_bin(5))
+if is_in_selected_base(ask_for_the_init_number, ask_for_the_init_base) == True:
+    if ask_for_the_target_base == 2:
+        if ask_for_the_init_base == 10:
+            print(dec_to_bin(ask_for_the_init_number))
