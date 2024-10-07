@@ -39,13 +39,13 @@ def bin_to_dec (n):
     return str(k)
 
 def dec_to_hex (n):
-    n = str (n)
+    n = int(n)
     k = ""
     if n == 0:
         return 0
     while n != 0:
-        k = f"{n % 16}" + k
+        k = f"{hex_valid_chars[n % 16]}" + k
         n = n // 16
     return k
 
-print (dec_to_hex (912))
+print (dec_to_hex ("912"))
