@@ -13,7 +13,7 @@ def is_in_selected_base (number, base):
     
     
     for j in number:
-        if j in valid_chars:
+        if j.upper() in valid_chars:
             pass
         else:
             print ("Le nombre n'existe pas dans cette base")
@@ -50,13 +50,19 @@ def dec_to_hex (n):
 
 
 
-def hex_to_decimal(hex_number):
+def hex_to_dec(hex_number):
     j = 0
     k = 0
     for i in hex_number[::-1]:
-        i = hex_valid_chars.index(i)
+        i = hex_valid_chars.index(i.upper())
         k += i*(16**j)
         j += 1
     return str(k)
 
-print(hex_to_decimal("9A3D"))
+def bin_to_hex (n):
+    return dec_to_hex(bin_to_dec(n))
+
+def hex_to_bin (n):
+    return dec_to_bin(hex_to_dec(n))
+
+print(hex_to_bin("9d"))
