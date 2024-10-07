@@ -64,5 +64,3 @@ def bin_to_hex (n):
 
 def hex_to_bin (n):
     return dec_to_bin(hex_to_dec(n))
-
-print(hex_to_bin("9d"))
