@@ -38,4 +38,14 @@ def bin_to_dec (n):
         j += 1
     return str(k)
 
-print(bin_to_dec("101"))
+def dec_to_hex (n):
+    n = str (n)
+    k = ""
+    if n == 0:
+        return 0
+    while n != 0:
+        k = f"{n % 16}" + k
+        n = n // 16
+    return k
+
+print (dec_to_hex (912))
