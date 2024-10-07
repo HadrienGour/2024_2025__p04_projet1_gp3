@@ -22,21 +22,23 @@ def is_in_selected_base (number, base):
 
 
 def dec_to_bin (n):
-    n = int(n)
+    n = int (n)
     k=""
     while n != 0:
         k = f"{n % 2}"+ k
         n = n//2
     return k
 
+
 def bin_to_dec (n):
     j = 0
     k = 0
-    for i in n[::-1]:
-        i = int(i)
-        k += i*(2**j)
+    for i in n [::-1]:
+        i = int (i)
+        k += i* (2 ** j)
         j += 1
-    return str(k)
+    return str (k)
+
 
 def dec_to_hex (n):
     n = int(n)
@@ -46,21 +48,22 @@ def dec_to_hex (n):
     while n != 0:
         k = f"{hex_valid_chars[n % 16]}" + k
         n = n // 16
-    return k
+    return k 
 
 
-
-def hex_to_dec(hex_number):
+def hex_to_dec (hex_number):
     j = 0
     k = 0
     for i in hex_number[::-1]:
-        i = hex_valid_chars.index(i.upper())
-        k += i*(16**j)
+        i = hex_valid_chars.index (i.upper())
+        k += i* (16 ** j)
         j += 1
-    return str(k)
+    return str (k)
+
 
 def bin_to_hex (n):
-    return dec_to_hex(bin_to_dec(n))
+    return dec_to_hex (bin_to_dec (n))
+
 
 def hex_to_bin (n):
-    return dec_to_bin(hex_to_dec(n))
+    return dec_to_bin (hex_to_dec (n))
