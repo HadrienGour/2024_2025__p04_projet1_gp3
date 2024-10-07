@@ -35,6 +35,8 @@ def dec_to_other_base (n, b):
 def base_to_dec (n, b):
     j = 0
     k = 0
+    if n == 0:
+        return 0
     for i in n[::-1]:
         i = hex_valid_chars.index (i.upper())
         k += i* (b ** j)
