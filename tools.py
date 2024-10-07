@@ -48,4 +48,4 @@ def dec_to_hex (n):
         n = n // 16
     return k
 
-print (dec_to_hex ("912"))
+print (dec_to_hex ("0"))
