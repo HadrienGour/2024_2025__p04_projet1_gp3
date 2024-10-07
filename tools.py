@@ -48,4 +48,15 @@ def dec_to_hex (n):
         n = n // 16
     return k
 
-print (dec_to_hex ("0"))
+
+
+def hex_to_decimal(hex_number):
+    j = 0
+    k = 0
+    for i in hex_number[::-1]:
+        i = hex_valid_chars.index(i)
+        k += i*(16**j)
+        j += 1
+    return str(k)
+
+print(hex_to_decimal("9A3D"))
