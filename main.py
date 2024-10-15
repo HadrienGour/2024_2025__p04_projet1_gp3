@@ -22,6 +22,7 @@ def do_the_job (init_number, init_base, target_base):
     init_base = ask_for_the_init_base
     target_base = ask_for_the_target_base
     target_number = nbr_base_to_nbr_base (init_number, init_base, target_base)
+    target_number = beauty_print(init_number, init_base, target_base, target_number)
     return target_number 
 
 print (do_the_job (ask_for_the_init_number, ask_for_the_init_base, ask_for_the_target_base))

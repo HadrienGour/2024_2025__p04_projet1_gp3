@@ -50,3 +50,6 @@ def bin_to_hex (n):
 
 def hex_to_bin (n):
     return dec_to_other_base (base_to_dec (n, 16), 2)
+
+def beauty_print (init_number, init_base, target_base, target_number):
+    return f"Le nombre {init_number} dans la base {init_base} vaut {target_number} dans la base {target_base}"
