@@ -21,35 +21,35 @@ def is_in_selected_base (number, base):
     return True
 
 
-def dec_to_other_base (n, b):
-    n = int(n)
-    k = ""
-    if n == 0:
+def dec_to_other_base (number, target_base):
+    number = int(number)
+    target_number = ""
+    if number == 0:
         return 0
-    while n != 0:
-        k = f"{hex_valid_chars[n % b]}" + k
-        n = n // b
-    return k 
+    while number != 0:
+        target_number = f"{hex_valid_chars [number % target_base]}" + target_number
+        number = number // target_base
+    return target_number
 
 
-def base_to_dec (n, b):
-    j = 0
-    k = 0
-    if n == 0:
+def base_to_dec (number, target_base):
+    exponent = 0
+    target_number = 0
+    if number == 0:
         return 0
-    for i in n[::-1]:
-        i = hex_valid_chars.index (i.upper())
-        k += i* (b ** j)
-        j += 1
-    return str (k)
+    for digit in number[::-1]:
+        digit = hex_valid_chars.index (digit.upper())
+        target_number += digit * (target_base ** exponent)
+        exponent += 1
+    return str (target_number)
 
 
-def bin_to_hex (n):
-    return dec_to_other_base (base_to_dec (n, 2), 16)
+def bin_to_hex (number):
+    return dec_to_other_base (base_to_dec (number, 2), 16)
 
 
-def hex_to_bin (n):
-    return dec_to_other_base (base_to_dec (n, 16), 2)
+def hex_to_bin (number):
+    return dec_to_other_base (base_to_dec (number, 16), 2)
 
 def beauty_print (init_number, init_base, target_base, target_number):
     return f"Le nombre {init_number} dans la base {init_base} vaut {target_number} dans la base {target_base}"
