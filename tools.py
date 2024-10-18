@@ -8,16 +8,14 @@ def is_in_selected_base (number, base):
     elif base == 16:
         valid_chars = hex_valid_chars
     else:
-        print ("Cette base n'est pas supportée dans le programme")
-        return False
+        return "not a base"
     
     
     for j in number:
         if j.upper() in valid_chars:
             pass
         else:
-            print ("Le nombre n'existe pas dans cette base")
-            return False
+            return "not in selected base"
     return True
 
 
