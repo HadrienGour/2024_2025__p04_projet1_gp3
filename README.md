@@ -7,4 +7,6 @@ On écrit un programme qui permet de passer de l'ecriture d'un entier d'une des 
 Le fichier principal main, qui à l'aide des fichiers secondaires data et tools importés, 
 est responsable de la mise en marche de l'objectif principal qui fait le travail demandé. Cette fonction a comme nom : do_the_job
 
-Le fichier tools comporte lui toutes les autres fonctions qui sont utilisés pour réaliser la fonction principale
+Le fichier tools comporte lui toutes les autres fonctions qui sont utilisés pour réaliser la fonction principale.
+
+Le fichier data pour sa part contient toute les données nécessaires au bon fonctionnement des programmes.
