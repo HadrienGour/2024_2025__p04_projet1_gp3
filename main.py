@@ -27,7 +27,7 @@ def do_the_job (init_number, init_base, target_base):
            print ( "Cette base n'est pas supportée dans le programme" )
         elif is_in_selected_base (init_number, init_base) == "not in selected base":
            print ( "Le nombre n'existe pas dans cette base" )
-        quit_or_continue = str(input("souhaitez vous continuer? : "))
+        quit_or_continue = str(input("souhaitez vous continuer ? : "))
     return "end of program"
 
 do_the_job (ask_for_the_init_number, ask_for_the_init_base, ask_for_the_target_base)
