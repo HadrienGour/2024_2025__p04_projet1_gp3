@@ -7,6 +7,8 @@ def nbr_base_to_nbr_base (init_number, init_base, target_base):
             target_number = dec_to_other_base (init_number, target_base)
         elif init_base == 16:
             target_number = hex_to_bin (init_number)
+        else:
+            target_number = init_number
     elif target_base == 10:
         target_number = base_to_dec (init_number, init_base)
     elif target_base == 16:
@@ -14,6 +16,8 @@ def nbr_base_to_nbr_base (init_number, init_base, target_base):
             target_number = bin_to_hex (init_number)
         elif init_base == 10:
             target_number = dec_to_other_base (init_number, target_base)
+        else:
+            target_number = init_number
     else:
         return False
     return target_number
@@ -27,7 +31,7 @@ def do_the_job (init_number, init_base, target_base):
                 target_number = beauty_print (init_number, init_base, target_base, target_number)
                 print( target_number ) 
             else:
-                print ( base_error )
+                print ( base_error)
         elif is_in_selected_base (init_number, init_base) == "not a base":
            print ( base_error )
         elif is_in_selected_base (init_number, init_base) == "not in selected base":
