@@ -27,11 +27,11 @@ def do_the_job (init_number, init_base, target_base):
                 target_number = beauty_print (init_number, init_base, target_base, target_number)
                 print( target_number ) 
             else:
-                print ( "Cette base n'est pas supportée dans le programme" )
+                print ( base_error )
         elif is_in_selected_base (init_number, init_base) == "not a base":
-           print ( "Cette base n'est pas supportée dans le programme" )
+           print ( base_error )
         elif is_in_selected_base (init_number, init_base) == "not in selected base":
-           print ( "Le nombre n'existe pas dans cette base" )
+           print ( number_error )
         quit_or_continue = str(input("souhaitez vous continuer ? : "))
         if quit_or_continue not in quit_responses:
             init_number = str(input("entrez le nombre initial :"))
