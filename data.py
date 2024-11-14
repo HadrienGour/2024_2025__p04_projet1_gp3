@@ -10,4 +10,6 @@ base_error = "Cette base n'est pas supportée dans le programme"
 number_error = "Ce nombre n'existe pas dans cette base"
 
 quit_responses = ["non", "Non", "NON", "nan", "Nan", "NAN", "NON!", "No", "NO", "no", "quit", "Quit",\
-                   "QUIT", "QUIT!", "exit", "Exit", "EXIT", "EXIT!", "sortir", "Sortir", "SORTIR", "sort", "Sort", "SORT"]
+                   "QUIT", "QUIT!", "exit", "Exit", "EXIT", "EXIT!", "sortir", "Sortir", "SORTIR", "sort",\
+                      "Sort", "SORT", "n", "N", "quitter", "QUITTER", "QUITTER!", "quitter!", "stop", "STOP",\
+                          "stop!", "STOP!", "end", "END", "out", "OUT"]
