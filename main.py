@@ -25,6 +25,7 @@ def nbr_base_to_nbr_base (init_number, init_base, target_base):
 def do_the_job (init_number, init_base, target_base):
     quit_or_continue = "continue"
     while quit_or_continue not in quit_responses:
+
         if is_in_selected_base (init_number, init_base) == True:
             target_number = nbr_base_to_nbr_base (init_number, init_base, target_base)
             if target_number != False:
@@ -32,10 +33,13 @@ def do_the_job (init_number, init_base, target_base):
                 print( target_number ) 
             else:
                 print ( base_error)
+
         elif is_in_selected_base (init_number, init_base) == "not a base":
            print ( base_error )
+
         elif is_in_selected_base (init_number, init_base) == "not in selected base":
            print ( number_error )
+           
         quit_or_continue = str(input("souhaitez vous continuer ? : "))
         if quit_or_continue not in quit_responses:
             init_number = str(input("entrez le nombre initial :"))
