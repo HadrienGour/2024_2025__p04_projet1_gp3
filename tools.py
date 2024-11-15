@@ -22,8 +22,6 @@ def is_in_selected_base (number, base):
 def dec_to_other_base (number, target_base):
     number = int(number)
     target_number = ""
-    if number == 0:
-        return 0
     while number != 0:
         target_number = f"{hex_valid_chars [number % target_base]}" + target_number
         number = number // target_base
@@ -33,8 +31,6 @@ def dec_to_other_base (number, target_base):
 def base_to_dec (number, target_base):
     exponent = 0
     target_number = 0
-    if number == 0:
-        return 0
     for digit in number[::-1]:
         digit = hex_valid_chars.index (digit.upper())
         target_number += digit * (target_base ** exponent)
